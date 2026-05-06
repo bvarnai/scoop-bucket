@@ -6,7 +6,7 @@ Welcome to my [Scoop](https://scoop.sh/) bucket. This repository contains manife
 
 | App | Description |
 | --- | ----------- |
-| **[rsync-for-git-bash](https://github.com/bvarnai/rsync-for-git-bash)** | A specialized build of `rsync` linked against the specific `msys-2.0.dll` runtime used by Git for Windows. |
+| **[rsync-for-git-bash](https://github.com/bvarnai/rsync-for-git-bash)** | A specialized build of `rsync` linked against the specific `msys-2.0.dll` runtime used by [Git for Windows](https://gitforwindows.org/). |
 
 ## 🚀 Installation
 
