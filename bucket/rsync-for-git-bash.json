@@ -5,7 +5,19 @@
   "license": "GPL-3.0-or-later",
   "url": "https://github.com/bvarnai/rsync-for-git-bash/releases/download/rsync-3.4.2-for-git-2.54.0.windows.1/rsync-3.4.2-for-git-2.54.0.windows.1-64-bit.zip",
   "hash": "e703c0a7c2bf5b9670934caac06b19bb68dd5893f71e1fc5aa9d51dba40f914b",
-  "bin": "bin/rsync.exe",
+  "post_install": [
+      "Write-Host 'Creating hardlink for MSYS2 compatibility...' -ForegroundColor Cyan",
+      "New-Item -ItemType HardLink -Path \"$scoopdir\\shims\\rsync.exe\" -Target \"$dir\\bin\\rsync.exe\" -Force | Out-Null"
+  ],
+  "uninstaller": {
+      "script": [
+          "$shimPath = \"$scoopdir\\shims\\rsync.exe\"",
+          "if (Test-Path $shimPath) {",
+          "    Write-Host 'Removing hardlink...' -ForegroundColor Yellow",
+          "    Remove-Item $shimPath -Force",
+          "}"
+      ]
+  },
   "checkver": "github",
   "autoupdate": {
     "url": "https://github.com/bvarnai/rsync-for-git-bash/releases/download/$tag/rsync-$version-for-git-$matchGit-64-bit.zip",
