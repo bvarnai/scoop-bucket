@@ -4,7 +4,7 @@
   "homepage": "https://github.com/bvarnai/rsync-for-git-bash",
   "license": "GPL-3.0-or-later",
   "url": "https://github.com/bvarnai/rsync-for-git-bash/releases/download/rsync-3.4.2-for-git-2.54.0.windows.1/rsync-3.4.2-for-git-2.54.0.windows.1-64-bit.zip",
-  "hash": "Not",
+  "hash": "e703c0a7c2bf5b9670934caac06b19bb68dd5893f71e1fc5aa9d51dba40f914b",
   "bin": "bin/rsync.exe",
   "checkver": "github",
   "autoupdate": {
