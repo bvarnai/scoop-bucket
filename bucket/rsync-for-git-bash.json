@@ -3,8 +3,8 @@
   "description": "rsync optimized for Git for Windows (Git Bash) environment",
   "homepage": "https://github.com/bvarnai/rsync-for-git-bash",
   "license": "GPL-3.0-or-later",
-  "url": "https://github.com/bvarnai/rsync-for-git-bash/releases/download/rsync-3.5.1-for-git-2.55.0.windows.5/rsync-3.5.1-for-git-2.55.0.windows.5-64-bit.zip",
-  "hash": "9dbc27e3ed0f9034c4aa058272a70238eb73e4f544f8dc590f18af1316481e3a",
+  "url": "https://github.com/bvarnai/rsync-for-git-bash/releases/download/rsync-3.5.1-for-git-2.56.0.windows.1/rsync-3.5.1-for-git-2.56.0.windows.1-64-bit.zip",
+  "hash": "85543b74c4fdf3b20bdf6a7bbc7a9f88177629c1581ebef079312e72dd7f9b87",
   "env_add_path": "bin",
   "post_install": [
     "Remove-Item \"$scoopdir\\shims\\rsync.exe\" -Force -ErrorAction SilentlyContinue",
